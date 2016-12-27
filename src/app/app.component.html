@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<ul>
+    <li>
+        <input [(ngModel)]="id" />
+        <a (click)="toGalleryPage()">Gallery link</a>
+    </li>
+    <li>
+        <!--(click)="toRandomPage()"-->
+        <a routerLink="random">Unrecognized link</a>
+    </li>
+</ul>
+<main>
+    <router-outlet></router-outlet>
+</main>
